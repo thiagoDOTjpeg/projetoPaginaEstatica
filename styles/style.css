@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: "Ubuntu", sans-serif;
+}
+
+body {
+  background-color: #3a5159;
+}
+
+/* SECTION NAVBAR */
+
+header {
+  background-color: #30434a;
+  height: 80px;
+}
+
+header #navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1280px;
+
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: 80px;
+}
+
+header #navbar .navbar-name {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+
+header #navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.3rem;
+}
+
+header #navbar .navbar-items a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.2rem;
+}
+
+header #navbar .navbar-items a:hover {
+  color: #262626;
+  transition: color 0.3s;
+}
+
+header #navbar .hamburguer-menu img {
+  width: 75px;
+  display: flex;
+}
+
+header #navbar .hamburguer-menu {
+  display: none;
+}
+
+/* SECTION BANNER */
+
+main {
+  margin-top: 6rem;
+}
+
+main section#main-banner {
+  display: flex;
+  background-color: #30434a;
+  height: 600px;
+  align-items: center;
+  justify-content: center;
+
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+main #banner-code-block pre {
+  height: 200px;
+  width: 70rem;
+  background-color: whitesmoke;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 40px;
+  border: 1px solid black;
+}
+
+/* main #banner-code-block pre span {
+  color: rgb(180, 4, 4);
+} */
+
+/* TESTE ANIMAÇÃO */
+
+.string-highlight {
+  color: rgba(253, 149, 90, 0.8);
+}
+
+#typewriter {
+  font-size: 2em;
+  margin: 0;
+  font-family: "Courier New";
+}
+#typewriter:after {
+  content: "|";
+  -webkit-animation: blink 500ms linear infinite alternate;
+  animation: blink 500ms linear infinite alternate;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
